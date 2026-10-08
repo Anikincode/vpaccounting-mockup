@@ -96,8 +96,13 @@
   .eyebrow { color: var(--accent); font-weight: 600; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 14px; }
   .lead { font-size: 19px; color: var(--ink-soft); max-width: 34em; }
   .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
-  .portrait { aspect-ratio: 4/5; border-radius: 16px; background: linear-gradient(160deg, var(--accent-soft), var(--line)); border: 1px solid var(--line); display: grid; place-items: center; text-align: center; color: var(--muted); font-size: 14px; padding: 20px; }
-  @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } .portrait { aspect-ratio: 16/10; } }
+  .photo { position: relative; margin: 0; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: var(--accent-soft); }
+  .photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .photo.portrait { aspect-ratio: 4/5; }
+  .photo.wide { aspect-ratio: 21/8; margin-bottom: 24px; }
+  .photo.flat { aspect-ratio: 3/2; margin-bottom: 20px; }
+  .photo figcaption { position: absolute; left: 10px; bottom: 10px; background: var(--confirm-bg); color: var(--confirm-ink); font-size: 12px; padding: 3px 8px; border-radius: 4px; }
+  @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } .photo.portrait { aspect-ratio: 4/3; } .photo.wide { aspect-ratio: 16/9; } }
 
   .trust { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--card); }
   .trust .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
@@ -211,7 +216,10 @@
           <a class="btn btn-ghost" href="#contact">Book a consultation</a>
         </div>
       </div>
-      <div class="portrait">Photo of Vasile at his desk<br><span class="confirm">real photo, not stock</span></div>
+      <figure class="photo portrait">
+        <img src="img/hero-accountant-desk.jpg" alt="Accountant smiling at his desk with client documents" width="1400" height="933" fetchpriority="high">
+        <figcaption>Stock photo: to be replaced with Vasile's own</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -279,6 +287,10 @@
   <section>
     <div class="wrap">
       <div class="section-head"><h2>How it works</h2></div>
+      <figure class="photo wide">
+        <img src="img/client-meeting.jpg" alt="Accountant reviewing tax documents with a client" width="1400" height="933" loading="lazy" style="object-position: center 35%">
+        <figcaption>Stock photo</figcaption>
+      </figure>
       <div class="steps">
         <div class="card"><h3>Call or book</h3><p>Tell us what you need. We'll tell you what to bring and what it costs, before we start.</p></div>
         <div class="card"><h3>Drop off or send your documents</h3><p>In person at our Keele St office, or securely online. <span class="confirm">confirm options</span></p></div>
@@ -289,7 +301,10 @@
 
   <section class="about" id="about">
     <div class="wrap">
-      <div class="portrait">Headshot of Vasile<br><span class="confirm">real photo</span></div>
+      <figure class="photo portrait">
+        <img src="img/about-working.jpg" alt="Accountant working through a client's paperwork with a calculator" width="1200" height="800" loading="lazy">
+        <figcaption>Stock photo: to be replaced with Vasile's own</figcaption>
+      </figure>
       <div>
         <div class="eyebrow">About</div>
         <h2>Meet Vasile Patras</h2>
@@ -305,6 +320,9 @@
     <div class="wrap two">
       <div>
         <h2>What to bring for your tax return</h2>
+        <figure class="photo flat">
+          <img src="img/tax-documents.jpg" alt="Tax folder, receipts and calculator on a desk" width="1200" height="800" loading="lazy">
+        </figure>
         <ul class="checklist">
           <li>T4, T4A and T5 slips</li>
           <li>RRSP contribution receipts</li>
