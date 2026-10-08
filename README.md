@@ -4,9 +4,6 @@ Homepage mockup for Vasile Patras - Accounting & Tax, prepared by Anikin Technol
 
 ## Photos
 
-Stock photos from Pexels (free to use, no attribution required). Placeholders only, to be replaced with real photos of Vasile and his office before launch.
-
-- img/hero-accountant-desk.jpg: https://www.pexels.com/photo/smiling-man-in-blue-suit-sitting-by-the-table-7821936/ (RDNE Stock project)
-- img/about-working.jpg: https://www.pexels.com/photo/man-in-black-suit-working-7821702/ (RDNE Stock project)
-- img/client-meeting.jpg: https://www.pexels.com/photo/professional-man-holding-papers-7821683/ (RDNE Stock project)
-- img/tax-documents.jpg: https://www.pexels.com/photo/black-and-gray-calculator-on-white-printer-paper-7111489/
+- img/vasile-patras.jpg: client-supplied profile photo of Vasile Patras (400x400; request a higher-resolution original before launch)
+- img/working-calculator.jpg: https://www.pexels.com/photo/bookkeeper-writing-down-on-paper-while-using-calculator-4476375/ (Pexels, free to use)
+- img/tax-documents.jpg: https://www.pexels.com/photo/black-and-gray-calculator-on-white-printer-paper-7111489/ (Pexels, free to use)

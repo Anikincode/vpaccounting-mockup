@@ -99,10 +99,11 @@
   .photo { position: relative; margin: 0; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: var(--accent-soft); }
   .photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .photo.portrait { aspect-ratio: 4/5; }
+  .photo.headshot { aspect-ratio: 1/1; background: #f4f4f4; max-width: 440px; justify-self: center; width: 100%; }
   .photo.wide { aspect-ratio: 21/8; margin-bottom: 24px; }
   .photo.flat { aspect-ratio: 3/2; margin-bottom: 20px; }
   .photo figcaption { position: absolute; left: 10px; bottom: 10px; background: var(--confirm-bg); color: var(--confirm-ink); font-size: 12px; padding: 3px 8px; border-radius: 4px; }
-  @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } .photo.portrait { aspect-ratio: 4/3; } .photo.wide { aspect-ratio: 16/9; } }
+  @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } .photo.portrait { aspect-ratio: 4/3; } .photo.headshot { max-width: 360px; } .photo.wide { aspect-ratio: 16/9; } }
 
   .trust { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--card); }
   .trust .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
@@ -216,9 +217,8 @@
           <a class="btn btn-ghost" href="#contact">Book a consultation</a>
         </div>
       </div>
-      <figure class="photo portrait">
-        <img src="img/hero-accountant-desk.jpg" alt="Accountant smiling at his desk with client documents" width="1400" height="933" fetchpriority="high">
-        <figcaption>Stock photo: to be replaced with Vasile's own</figcaption>
+      <figure class="photo headshot">
+        <img src="img/vasile-patras.jpg" alt="Vasile Patras, accountant in Vaughan" width="400" height="400" fetchpriority="high">
       </figure>
     </div>
   </section>
@@ -288,7 +288,7 @@
     <div class="wrap">
       <div class="section-head"><h2>How it works</h2></div>
       <figure class="photo wide">
-        <img src="img/client-meeting.jpg" alt="Accountant reviewing tax documents with a client" width="1400" height="933" loading="lazy" style="object-position: center 35%">
+        <img src="img/working-calculator.jpg" alt="Working through a client's numbers with a calculator and notes" width="1400" height="933" loading="lazy" style="object-position: center 55%">
         <figcaption>Stock photo</figcaption>
       </figure>
       <div class="steps">
@@ -301,9 +301,8 @@
 
   <section class="about" id="about">
     <div class="wrap">
-      <figure class="photo portrait">
-        <img src="img/about-working.jpg" alt="Accountant working through a client's paperwork with a calculator" width="1200" height="800" loading="lazy">
-        <figcaption>Stock photo: to be replaced with Vasile's own</figcaption>
+      <figure class="photo headshot">
+        <img src="img/vasile-patras.jpg" alt="Vasile Patras" width="400" height="400" loading="lazy">
       </figure>
       <div>
         <div class="eyebrow">About</div>
