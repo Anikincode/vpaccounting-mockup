@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Accountant in Vaughan | Vasile Patras - Accounting &amp; Tax</title>
-<meta name="description" content="Personal tax, corporate tax and bookkeeping in Vaughan. Work directly with Vasile Patras from our Keele St office in Concord. Call (437) 994-6655 to book.">
+<meta name="description" content="Personal and corporate tax, online bookkeeping, HST and payroll in Vaughan. Work directly with Vasile Patras from our Keele St office in Concord. Call (437) 994-6655 to book.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <!-- Schema: AccountingService (LocalBusiness). Fill [CONFIRM] values before launch. -->
@@ -70,7 +70,7 @@
   p { margin: 0 0 1em; }
   a { color: inherit; }
   .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
-  .confirm { background: var(--confirm-bg); color: var(--confirm-ink); padding: 0 .3em; border-radius: 4px; font-size: .92em; white-space: nowrap; }
+  .confirm { background: var(--confirm-bg); color: var(--confirm-ink); padding: 0 .3em; border-radius: 4px; font-size: .92em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 
   .mock-banner { background: var(--confirm-bg); color: var(--confirm-ink); text-align: center; font-size: 14px; padding: 8px 16px; }
   .topbar { background: var(--navy); color: var(--on-navy); font-size: 14px; }
@@ -151,6 +151,22 @@
   summary { cursor: pointer; font-weight: 600; }
   details p { margin: 10px 0 0; color: var(--ink-soft); }
 
+  .catchup { background: var(--accent-soft); }
+  .catchup .wrap { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; }
+  .catchup ul { margin: 0; padding-left: 20px; color: var(--ink-soft); }
+  .catchup li { margin-bottom: 8px; }
+  @media (max-width: 860px) { .catchup .wrap { grid-template-columns: 1fr; } }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 0 0 28px; }
+  .chips li { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px; font-size: 15px; }
+  .note { background: var(--card); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 10px; padding: 18px 20px; color: var(--ink-soft); font-size: 15.5px; }
+  .note strong { color: var(--ink); }
+
+  .tools { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; margin: 0; }
+  .tools dt { font-weight: 600; font-size: 15px; }
+  .tools dd { margin: 0 0 6px; color: var(--ink-soft); font-size: 15px; }
+  @media (max-width: 560px) { .tools { grid-template-columns: 1fr; } }
+
   .reviews { text-align: center; border: 2px dashed var(--line); border-radius: 16px; padding: 36px 20px; color: var(--muted); }
 
   .contact .wrap { display: grid; grid-template-columns: 1fr 1.1fr; gap: 40px; }
@@ -196,7 +212,8 @@
       <ul>
         <li><a href="#services">Personal Tax</a></li>
         <li><a href="#services">Small Business</a></li>
-        <li><a href="#services">Bookkeeping</a></li>
+        <li><a href="#bookkeeping">Bookkeeping</a></li>
+        <li><a href="#industries">Industries</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -211,7 +228,7 @@
       <div>
         <div class="eyebrow">Accountant in Vaughan</div>
         <h1>Your taxes and books, done right, by someone who explains them.</h1>
-        <p class="lead">Personal tax returns, corporate tax and bookkeeping for families and small business owners across Vaughan. You work directly with Vasile, from the first question to the final filing.</p>
+        <p class="lead">Personal tax returns, corporate tax, online bookkeeping, HST and payroll for families and small business owners across Vaughan. You work directly with Vasile, from the first question to the final filing.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="tel:+14379946655">Call (437) 994-6655</a>
           <a class="btn btn-ghost" href="#contact">Book a consultation</a>
@@ -227,7 +244,7 @@
     <div class="wrap">
       <div><strong>Office on Keele St</strong>Concord, Vaughan</div>
       <div><strong><span class="confirm">[X] years</span></strong>in accounting &amp; tax</div>
-      <div><strong><span class="confirm">CRA EFILE</span></strong>faster refunds</div>
+      <div><strong>CRA Represent a Client</strong>we deal with CRA for you</div>
       <div><strong><span class="confirm">English · Română</span></strong>languages served</div>
     </div>
   </div>
@@ -247,23 +264,66 @@
         </article>
         <article class="card">
           <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div>
-          <h3>Small business &amp; corporate tax</h3>
-          <p>Corporate (T2) returns, year-end, and advice on paying yourself. Built for owner-run businesses, not big corporations.</p>
+          <h3>Corporate tax &amp; tax planning</h3>
+          <p>Corporate (T2) returns and year-end, plus tax planning for business owners: how to pay yourself, when to incorporate, and what to plan for before year-end.</p>
           <a class="more" href="#">Small business accounting →</a>
         </article>
         <article class="card">
           <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h16M9 4v16"/></svg></div>
-          <h3>Bookkeeping</h3>
-          <p>Monthly bookkeeping so your numbers are always ready: for tax time, for your bank, and for you.</p>
-          <a class="more" href="#">Bookkeeping in Vaughan →</a>
+          <h3>Online bookkeeping</h3>
+          <p>Monthly bookkeeping in QuickBooks Online, connected to the apps you already use, so your numbers are up to date for tax time and for running the business.</p>
+          <a class="more" href="#bookkeeping">How bookkeeping works →</a>
         </article>
         <article class="card">
           <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
           <h3>HST &amp; self-employed</h3>
-          <p>HST registration and filing, plus returns for contractors and sole proprietors. Expenses, vehicle and home office handled.</p>
+          <p>HST registration and filing, including the Quick Method where it saves you money, plus returns for sole proprietors. Expenses, vehicle and home office handled.</p>
           <a class="more" href="#">HST filing →</a>
         </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></svg></div>
+          <h3>Payroll, WSIB &amp; EHT</h3>
+          <p>We automate your payroll, WSIB and EHT payments to meet government deadlines, and handle T4s at year-end.</p>
+          <a class="more" href="#">Payroll services →</a>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM15 3v4h4M9 12h7M9 16h5"/></svg></div>
+          <h3>Incorporation</h3>
+          <p>Incorporating a straightforward business? We can set it up for you. For more complex structures, we'll work with your lawyer.</p>
+          <a class="more" href="#">Incorporating your business →</a>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div>
+          <h3>CRA audits &amp; spot review support</h3>
+          <p>A CRA audit or spot review can happen to anyone. We're authorized through Represent a Client to deal with CRA on your behalf, from the first letter to the final result.</p>
+          <a class="more" href="#">CRA audit support →</a>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+          <h3>Audit support &amp; financial reporting</h3>
+          <p>If your company has an annual audit, we work with your auditors: answering their questions and preparing what they need. Plus financial reporting tailored to how you run the business.</p>
+          <a class="more" href="#">Audit support →</a>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <section class="catchup" id="catch-up">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Behind on filings?</div>
+        <h2>A few years behind on taxes? Check your HST and payroll too.</h2>
+        <p>Many business owners know their tax returns are late but don't realize their HST returns and payroll remittances are late as well. Each one carries its own penalties and interest, and CRA tracks them separately.</p>
+        <p>We work out everything that's outstanding, put it in order, and deal with CRA for you.</p>
+        <a class="btn btn-primary" href="#contact">Get caught up</a>
+      </div>
+      <ul>
+        <li>Late personal and corporate tax returns</li>
+        <li>Unfiled HST returns</li>
+        <li>Late payroll remittances, T4s and T5018 slips</li>
+        <li>Missing or out-of-date bookkeeping for the years in question</li>
+        <li>Talking to CRA on your behalf through Represent a Client</li>
+      </ul>
     </div>
   </section>
 
@@ -299,6 +359,57 @@
     </div>
   </section>
 
+  <section id="bookkeeping">
+    <div class="wrap two">
+      <div>
+        <div class="eyebrow">Online bookkeeping</div>
+        <h2>Bookkeeping that fits how your business already runs</h2>
+        <p>We use QuickBooks Online for our clients. If you're already on Xero, we'll work in Xero. Both give us our own accountant access, so we never need your login.</p>
+        <p>Reports are tailored to what you need, when you need them. Most clients start with a monthly profit &amp; loss and balance sheet, and add more as the business grows.</p>
+        <p>We have years of experience connecting accounting software to the other tools a business runs on, and setting up processes that save you time every month.</p>
+      </div>
+      <div>
+        <h3>Software we work with</h3>
+        <dl class="tools">
+          <div><dt>QuickBooks Online · Xero</dt><dd>Accounting</dd></div>
+          <div><dt>Dext</dt><dd>Receipts and bills</dd></div>
+          <div><dt>Wagepoint</dt><dd>Payroll</dd></div>
+          <div><dt>Plooto</dt><dd>Paying bills and collecting from customers</dd></div>
+          <div><dt>Shopify · Stripe · Square</dt><dd>E-commerce and payments</dd></div>
+          <div><dt>Jane App · Owl Practice</dt><dd>Clinics, wellness and mental health practices</dd></div>
+          <div><dt>Clio</dt><dd>Law firms and paralegals</dd></div>
+          <div><dt>Something else?</dt><dd>Ask us. We integrate client-specific software regularly.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="industries">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Industries we work with</h2>
+        <p>Every industry has its own software, deadlines and deductions. These are the businesses we know well.</p>
+      </div>
+      <ul class="chips">
+        <li>Medical and wellness</li>
+        <li>Mental health practices (psychology, psychotherapy)</li>
+        <li>Dental</li>
+        <li>Construction and trades</li>
+        <li>IT and technology</li>
+        <li>Retail and e-commerce</li>
+        <li>Restaurants and franchises</li>
+        <li>Real estate agents</li>
+        <li>Real estate investors and landlords</li>
+        <li>Law firms and paralegals</li>
+        <li>Professional services</li>
+        <li>Car dealerships, rentals and repair shops</li>
+        <li>Entertainment and media</li>
+        <li>Non-profits</li>
+      </ul>
+      <p class="note"><strong>Contractors and trades:</strong> we work with electrical contractors, installers and builders, both incorporated and self-employed. That includes contractors who employ crews and buy materials, and subcontractors working on their own. We handle T5018 slips for payments to subcontractors, along with HST and payroll.</p>
+    </div>
+  </section>
+
   <section class="about" id="about">
     <div class="wrap">
       <figure class="photo headshot">
@@ -307,7 +418,7 @@
       <div>
         <div class="eyebrow">About</div>
         <h2>Meet Vasile Patras</h2>
-        <p>I started this practice so clients would always know who's handling their file. When you call, you reach me. When you have a question about your return, I answer it, in plain language.</p>
+        <p>I started this practice so clients would always know who's handling their file. We prioritize client communication: every question gets a reply within 2 business days, in plain language.</p>
         <p><span class="confirm">[Background: years of experience, previous firm, credentials/designation, education]</span></p>
         <p><span class="confirm">[Languages: English, Romanian, Russian?]</span></p>
         <a class="btn btn-ghost" href="#">More about Vasile →</a>
@@ -341,6 +452,9 @@
         <details><summary>Can I do everything remotely?</summary><p><span class="confirm">[Yes / In person preferred]</span>. You can send documents securely and review your return by phone or video.</p></details>
         <details><summary>I got a letter from CRA. Can you help?</summary><p>Yes. Bring or send the letter. We'll explain what it means and what needs to happen next.</p></details>
         <details><summary>Do you work with new businesses?</summary><p>Yes. We help you set up your books from day one, register for HST if needed, and avoid the most common first-year mistakes.</p></details>
+        <details><summary>Can you take over from my current accountant?</summary><p>Yes. We handle the switch, including getting authorized with CRA through Represent a Client, so you don't have to chase anything.</p></details>
+        <details><summary>I'm a few years behind. Where do I start?</summary><p>Call us. Late tax returns often come with late HST and payroll filings too. We'll find everything that's outstanding and work through it in the right order.</p></details>
+        <details><summary>Can you prepare a compilation, review or audit report for my bank?</summary><p>No. We don't issue compilation, review or audit engagement reports. We provide bookkeeping and financial reporting for managing your business, and if you need one of those reports, we can work with the firm that prepares it.</p></details>
       </div>
     </div>
   </section>
@@ -372,6 +486,11 @@
             <option>Corporate / small business tax</option>
             <option>Bookkeeping</option>
             <option>HST filing</option>
+            <option>Payroll, WSIB &amp; EHT</option>
+            <option>Catching up on late filings</option>
+            <option>Incorporation</option>
+            <option>CRA audit or spot review</option>
+            <option>Audit support / financial reporting</option>
             <option>Something else</option>
           </select>
           <textarea rows="3" placeholder="Anything we should know?" aria-label="Message"></textarea>
